@@ -1,0 +1,7 @@
+# Build artifacts
+*.o
+riscv_sim
+
+# OS / Editor files
+*~
+.vscode/
