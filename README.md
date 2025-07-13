@@ -8,7 +8,7 @@ A simple, educational RISC‑V instruction‑level simulator in C++. Assemble an
 
 ## 📂 Repository Layout
 
-
+```text 
 RISC_V_Simulator/
 ├── docs/                   # Design docs & lab reports (PDF/MD)
 ├── data/                   # Sample programs & testcases
@@ -25,7 +25,7 @@ RISC_V_Simulator/
 ├── Makefile                # Build & clean rules
 ├── README.md               # This file
 └── LICENSE                 # MIT license
-
+```
 
 ## 🚀 Usage
 1. Prepare your files
