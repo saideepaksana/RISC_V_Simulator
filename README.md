@@ -37,18 +37,23 @@ RISC_V_Simulator/
 - Makefile — to build & clean
 
 2. Build
-
-make all  
+```bash
+make all
+```
+  
 - This produces: riscv_sim executable
 - object files (e.g. assembly_to_machine.o)
 
 3. Run
 
+```bash
 ./riscv_sim data/input.s
-
+```
 4. Clean
-
+```bash
 make clean
+```
+
 
 ## ⚙️ Input Format
 - One instruction per line, properly spaced.
@@ -56,9 +61,11 @@ make clean
 - Labels must start at column 1.
 
 - In the .data section, list decimal integers separated by comma + space:
-  
+```s
 .data
 arr: .word 10, 20, 30
+```
+
 
 ## 🛠️ Features
 - RV32I instruction set support (loads, stores, arithmetic, branches)
@@ -80,13 +87,21 @@ arr: .word 10, 20, 30
 - Fork the repo
 
 - Create your feature branch
-  git checkout -b feat/your-feature
+```bash
+git checkout -b feat/your-feature
+```
+  
 
 - Commit your changes
-  git commit -m "Add awesome feature"
+```bash
+git commit -m "Add awesome feature"
+```
 
 - Push and open a Pull Request
-  git push origin feat/your-feature
+```bash
+git push origin feat/your-feature
+```
+  
   
 Please follow the existing code style and include tests where appropriate.
 
