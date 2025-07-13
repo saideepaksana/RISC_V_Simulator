@@ -8,7 +8,7 @@ A simple, educational RISC‑V instruction‑level simulator in C++. Assemble an
 
 ## 📂 Repository Layout
 
-```text
+
 RISC_V_Simulator/
 ├── docs/                   # Design docs & lab reports (PDF/MD)
 ├── data/                   # Sample programs & testcases
@@ -25,89 +25,70 @@ RISC_V_Simulator/
 ├── Makefile                # Build & clean rules
 ├── README.md               # This file
 └── LICENSE                 # MIT license
-🚀 Usage
-Prepare your files
 
-src/simulator.cpp — core simulator
 
-data/input.s — your RISC‑V assembly (one instruction per line; labels at start; in .data, use number, )
+## 🚀 Usage
+1. Prepare your files
 
-Makefile — to build & clean
+- src/simulator.cpp — core simulator
 
-Build
+- data/input.s — your RISC‑V assembly (one instruction per line; labels at start; in .data, use number, )
 
-bash
-Copy
-Edit
-make all
-This produces:
+- Makefile — to build & clean
 
-riscv_sim executable
+2. Build
 
-object files (e.g. assembly_to_machine.o)
+make all  
+- This produces: riscv_sim executable
+- object files (e.g. assembly_to_machine.o)
 
-Run
+3. Run
 
-bash
-Copy
-Edit
 ./riscv_sim data/input.s
-Clean
 
-bash
-Copy
-Edit
+4. Clean
+
 make clean
-⚙️ Input Format
-One instruction per line, properly spaced.
 
-Labels must start at column 1.
+## ⚙️ Input Format
+- One instruction per line, properly spaced.
 
-In the .data section, list decimal integers separated by comma + space.
+- Labels must start at column 1.
 
-s
-Copy
-Edit
+- In the .data section, list decimal integers separated by comma + space:
+  
 .data
 arr: .word 10, 20, 30
-🛠️ Features
-RV32I instruction set support (loads, stores, arithmetic, branches).
 
-Standalone cache simulator (cache_simulator.cpp) with configurable parameters.
+## 🛠️ Features
+- RV32I instruction set support (loads, stores, arithmetic, branches)
 
-Easily extensible to additional RISC‑V extensions or pipeline models.
+- Standalone cache simulator (cache_simulator.cpp) with configurable parameters
 
-📝 Roadmap
- Add support for CSR and system instructions
+- Easily extensible to additional RISC‑V extensions or pipeline models
 
- Integrate a pipeline timing model
+## 📝 Roadmap
+- [ ] Add support for CSR and system instructions
 
- Create a CMake build option
+- [ ] Integrate a pipeline timing model
 
- Automated unit tests (Catch2)
+- [ ] Create a CMake build option
 
-🤝 Contributing
-Fork the repo
+- [ ] Automated unit tests (Catch2)
 
-Create your feature branch
+## 🤝 Contributing
+- Fork the repo
 
-bash
-Copy
-Edit
-git checkout -b feat/your-feature
-Commit your changes
+- Create your feature branch
+  git checkout -b feat/your-feature
 
-bash
-Copy
-Edit
-git commit -m "Add awesome feature"
-Push and open a Pull Request
+- Commit your changes
+  git commit -m "Add awesome feature"
 
-bash
-Copy
-Edit
-git push origin feat/your-feature
+- Push and open a Pull Request
+  git push origin feat/your-feature
+  
 Please follow the existing code style and include tests where appropriate.
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License. See LICENSE for details.
